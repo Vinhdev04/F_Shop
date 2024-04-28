@@ -1,0 +1,135 @@
+/*======================== Header navbar ======================== */
+.header {
+  height: 120px;
+  background-image: linear-gradient(0, #fe6433, #f53e2d);
+}
+
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__navbar-list {
+  list-style: none;
+  margin: 8px;
+}
+
+.header__navbar-item {
+  margin: 0 8px;
+  position: relative;
+  min-height: 26px;
+}
+
+.header__navbar-item,
+.header__navbar-item-link {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: var(--white-color);
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.header__navbar-item:hover,
+.header__navbar-item-link:hover,
+.header__navbar-icon-link:hover {
+  color: rgb(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.header__navbar-item,
+.header__navbar-item-link,
+.header__navbar-icon-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header__navbar-item--strong {
+  font-weight: 400;
+}
+
+.header__navbar-item--separate::after {
+  content: " ";
+  display: block;
+  height: 12px;
+  border-left: 1px solid #fb9068;
+  position: absolute;
+  top: 50%;
+  right: -9px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.header__navbar-icon-link {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.header__navbar-icon {
+  font-size: 1.8rem;
+  margin: 0 4px;
+}
+
+.header__navbar-title--no-pointer {
+  cursor: text;
+  color: var(--white-color);
+}
+
+/*======================== Header QR code ======================== */
+.header__QR {
+  width: 186px;
+  background-color: var(--white-color);
+  position: absolute;
+  left: 0;
+  /*top: 100%:; -> 100% the chua no va 20% margin */
+  top: 120%;
+  padding: 8px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  /*hiddenQR*/display: none;
+  animation: fadeIn ease-in 1s ;
+  -webkit-animation: fadeIn ease-in 1s ;
+}
+
+/* No hidden QR click QR */
+.header__QR::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: -16px;
+    width: 100%;
+    height: 20px;
+    display: block;
+    /* background-color: #f53e2d; */
+}
+
+.header__QR-img {
+  width: 100%;
+}
+
+.header__QR-apps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__QR-download-img {
+  height: 16px;
+}
+
+.header__QA-link:first-child {
+  margin-left: 11px;
+}
+
+.header__QA-link:nth-child(2) {
+  margin-right: 11px;
+}
+
+.header__navbar-item--has-QR:hover .header__QR {
+    display: block;
+}

@@ -31,5 +31,89 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>F_Shop</title>
   </head>
-  <body></body>
+  <body>
+    <div class="app">
+      <!-- BEM -> Block Element Modifier -->
+      <header class="header">
+        <div class="grid">
+          <nav class="header__navbar">
+            <ul class="header__navbar-list">
+              <li
+                class="header__navbar-item header__navbar-item--has-QR header__navbar-item--separate "
+              >
+                Go Shopping with app F-Shop now
+
+                <!-- Header QR code -->
+                <div class="header__QR">
+                  <img
+                    src="./assets/img/Header_QR.png"
+                    alt="QR code"
+                    class="header__QR-img"
+                  />
+                  <div class="header__QR-apps">
+                    <a
+                      href="https://download.com.vn/google-play-apk-59541"
+                      class="header__QA-link"
+                    >
+                      <img
+                        src="./assets/img/Header_Google_Play.png"
+                        alt="Google Play"
+                        class="header__QR-download-img"
+                      />
+                    </a>
+                    <a
+                      href="https://www.apple.com/app-store/"
+                      class="header__QA-link"
+                    >
+                      <img
+                        src="./assets/img/Header_Apstore.png"
+                        alt="App Store"
+                        class="header__QR-download-img"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="header__navbar-item">
+                <span class="header__navbar-title--no-pointer">Contact</span>
+                <a href="" class="header__navbar-icon-link">
+                  <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                </a>
+                <a href="" class="header__navbar-icon-link">
+                  <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="header__navbar-list">
+              <li class="header__navbar-item">
+                <a href="" class="header__navbar-item-link">
+                  <i class="header__navbar-icon fa-regular fa-bell"></i>
+                  Notification
+                </a>
+              </li>
+              <li class="header__navbar-item">
+                <a href="" class="header__navbar-item-link">
+                  <i class="header__navbar-icon fa-solid fa-circle-info"></i>
+                  Help
+                </a>
+              </li>
+              <li
+                class="header__navbar-item header__navbar-item--strong header__navbar-item--separate"
+              >
+                Sign In
+              </li>
+              <li class="header__navbar-item header__navbar-item--strong">
+                Sign Up
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div class="container"></div>
+
+      <footer class="footer"></footer>
+    </div>
+  </body>
 </html>
