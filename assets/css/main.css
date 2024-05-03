@@ -458,6 +458,7 @@
 .header__cart {
   width: 150px;
   text-align: center;
+  position: relative;
 }
 
 .header__cart-icon {
@@ -653,9 +654,66 @@
   font-size: 1.4rem;
   color: var(--text-color);
   line-height: 38px;
+  display: block;
 }
 
 .header__search-history-item:last-child {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
+}
+
+/*======================== Header Cart ======================== */
+
+.header__cart-wrap {
+  position: relative;
+  display: inline-block;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+.header__cart-list::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  right: 1px;
+  top: -19px;
+  border-width: 10px 14px;
+  border-style: solid;
+  border-color: transparent transparent var(--white-color) transparent;
+}
+
+.header__cart-list {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 10px;
+  background-color: var(--white-color);
+  width: 400px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
+  display: none;
+  animation: fadeIn ease-in 0.2s;
+  -webkit-animation: fadeIn ease-in 0.2s;
+}
+
+.header__cart-no-cart-img {
+  width: 54%;
+}
+
+.header__cart-list--no-cart {
+  padding: 50px 0;
+}
+
+.header__cart-list-no-cart-msg {
+  font-size: 1.4rem;
+  margin-top: 14px;
+  color: var(--text-color);
+}
+
+.header__cart-wrap:hover .header__cart-list {
+  display: block;
+  cursor: pointer;
 }
