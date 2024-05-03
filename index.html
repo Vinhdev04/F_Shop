@@ -24,9 +24,9 @@
       href="./assets/img/logo.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/base.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
     <title>F_Shop</title>
   </head>
   <body>
@@ -221,7 +221,9 @@
                   <li class="header__navbar-user-item">
                     <a href="#!">Đơn mua </a>
                   </li>
-                  <li class="header__navbar-user-item header__navbar-user-item--separate">
+                  <li
+                    class="header__navbar-user-item header__navbar-user-item--separate"
+                  >
                     <a href="#!">Đăng xuất</a>
                   </li>
                 </ul>
@@ -240,6 +242,7 @@
                 />
               </a>
             </div>
+
             <!-- Search -->
             <div class="header__search">
               <div class="header__search-input-wrap">
@@ -295,6 +298,7 @@
                 ></i>
               </button>
             </div>
+
             <!-- Cart -->
             <div class="header__cart">
               <div class="header__cart-wrap">
@@ -465,7 +469,49 @@
       <!-- End: Header -->
 
       <!-- Begin: Container -->
-      <div class="container"></div>
+      <div class="container">
+        <div class="grid">
+          <div class="grid__row">
+            <div class="grid__column-2">
+              <nav class="category">
+                <i class="fa-solid fa-list"></i>
+                <h3 class="category-heading">Danh mục</h3>
+                <ul class="category-list">
+                  <li class="category-item category-item-active">
+                    <a href="#" class="category-item-link"> Gaming </a>
+                  </li>
+
+                  <li class="category-item">
+                    <a href="#" class="category-item-link"> Phụ Kiện Máy Tính </a>
+                  </li>
+
+                  <li class="category-item">
+                    <a href="#" class="category-item-link">
+                      Máy In, Máy Scan & Máy Chiếu
+                    </a>
+                  </li>
+
+                  <li class="category-item">
+                    <a href="#" class="category-item-link"> Màn hình PC </a>
+                  </li>
+
+                  <li class="category-item">
+                    <a href="#" class="category-item-link"> Sản phẩm Decor </a>
+                  </li>
+
+                  <li class="category-item">
+                    <a href="#" class="category-item-link">
+                      Tai nghe Bluetooth
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="grid__column-10"></div>
+          </div>
+        </div>
+      </div>
       <!-- End: Container -->
 
       <!-- Begin: Footer -->

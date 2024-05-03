@@ -4,8 +4,8 @@
   --black-color: #000;
   --text-color: #333;
   --border-color: #dbdbdb;
-  --navbar-height: 35.64px;
-  --header-height: 130px;
+  --navbar-height: 58.64px;
+  --header-height: 150px;
   --header-width-height: calc(var(--header-height) - var(--navbar-height))
 }
 
@@ -21,6 +21,24 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*======================== Responsive ======================== */
+/* Test */
+.grid__column-2 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 16.6667%;
+}
+
+.grid__column-10 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 83.3334%;
+}
 .grid {
   width: 1200px;
   max-width: 100%;
@@ -34,7 +52,10 @@ html {
 .grid__row {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
 }
+
 
 
 /*======================== Modal ======================== */

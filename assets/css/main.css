@@ -8,7 +8,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4px 1px;
+  /* padding: 4px 1px; */
+  padding: 0;
 }
 
 .header__navbar-list {
@@ -31,6 +32,9 @@
   color: var(--white-color);
   text-decoration: none;
   font-weight: 300;
+}
+.header__navbar-item:first-child {
+  margin-left: -39px;
 }
 
 .header__navbar-item:hover,
@@ -970,3 +974,5 @@ i.fa-regular.fa-circle-question {
 .header__cart-view-cart:hover {
   opacity: 0.8;
 }
+
+/*========================  ======================== */
