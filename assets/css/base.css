@@ -7,6 +7,7 @@
   --navbar-height: 58.64px;
   --header-height: 150px;
   --header-width-height: calc(var(--header-height) - var(--navbar-height));
+  --star-gold-color: #FFCE3D;
 }
 
 * {
@@ -29,16 +30,23 @@ body {
 /*======================== Responsive ======================== */
 /* Test */
 .grid__column-2 {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
   width: 16.6667%;
 }
 
 .grid__column-10 {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
   width: 83.3334%;
 }
+
+.grid__column-2-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20%;
+}
+
 .grid {
   width: 1200px;
   max-width: 100%;
@@ -52,8 +60,8 @@ body {
 .grid__row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -12px;
-  margin-right: -12px;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
 /*======================== Modal ======================== */

@@ -1,4 +1,4 @@
-### Header: Fix bug UI
+### Header: Fix bug UI Ph?n 1
 
 ## Navbar font-size:
 
@@ -39,7 +39,7 @@
 
 ## Logo link:
 
-- Add ".header**logo-link" bọc "header**logo-img"
+- Add ".header**logo-link" bỞc "header**logo-img"
 - .header\_\_logo-link -> text-decoration: none, color: transparent
   -> done
 
