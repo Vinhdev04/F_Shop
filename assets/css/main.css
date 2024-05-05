@@ -1389,3 +1389,9 @@ i.home-product-item__like-icon-fill {
   position: relative;
   top: 2px;
 }
+
+/*======================== Pagination ======================== */
+.home-product__pagination {
+  margin-top: 48px;
+  margin-bottom: 32px;
+}
