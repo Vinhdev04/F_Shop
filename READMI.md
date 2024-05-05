@@ -1,4 +1,4 @@
-### Header: Fix bug UI Ph?n 1
+### Header: Fix bug UI Phần 1
 
 ## Navbar font-size:
 
@@ -44,4 +44,74 @@
   -> done
 
 ## Search selection offset-top:
+
 - -> done
+
+### App-Container: Fix bug UI Phần 2:
+
+## Header QR code z-index:
+
+->" .header\_\_QR " -> box-shadow: 0 1px 2px rgba(0,0,0,0.1)
+-> z-index: 1;
+
+-> done
+
+## User menu offset-top:
+
+-> ".header\_\_navbar-user-menu::before" -> top: -28px;
+
+-> done
+
+## Search history z-index:
+
+-> ".header\_\_search-history" -> z-index = 1
+
+-> done
+
+## Search selection z-index:
+
+-> ".header\_\_search-option" -> z-index = 1
+
+-> done
+
+## Cart z-index + cart quantity:
+
+-> ".header**cart-list" -> z-index = 1
+-> ".header**cart-list-item " -> height: 50vh , overflow-y: auto;
+
+-> done
+
+## Cart Product name limiting:
+
+-> Khi thông tin quá dài ".header**cart-item-name"
+-> line-height: 2rem;
+max-height:4rem;
+overflow: hidden;
+flex: 1;
+padding-right: 16px;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+text-align: left;
+-> ".header**cart-item-head" ->
+flex = 1,
+
+-> done
+
+## Category style: Add border-top
+
+->".category-item " -> position: relative;
+
+-> ".category-item:first-child::before" -> display: none;
+
+-> ".category-item-link" -> padding: 10px 16px;
+
+-> done
+
+## Product border-radius:
+
+-> ".home-product-item" -> Remove and Fix all -> border-radius: 2px
+
+-> ".home-product-item\_\_img" -> border-top-left-radius: 2px, border-top-right-radius: 2px
+
+-> ".home-product-item\_\_sale-off " -> border-top-right-radius: 2px;

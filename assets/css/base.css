@@ -194,6 +194,7 @@ body {
   list-style: none;
   /* hidden list option */
   display: none;
+  z-index: 1;
 }
 
 .select-input:hover .select-input__list {
